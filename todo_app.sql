@@ -27,9 +27,8 @@ CREATE TABLE tasks (
 -- 8
 
 ALTER TABLE tasks
-      DROP COLUMN completed RESTRICT;
-
-
+      DROP COLUMN completed RESTRICT,
+      ADD COLUMN completed_at timestamp null;
 
 
 
