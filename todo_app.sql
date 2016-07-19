@@ -17,3 +17,24 @@ CREATE DATABASE todo_app;
 -- 5
 
 \c todo_app;
+
+-- 6 & 7
+
+CREATE TABLE tasks (
+    id serial PRIMARY KEY
+);
+
+-- 8
+
+ALTER TABLE tasks
+      DROP COLUMN completed RESTRICT;
+
+
+
+
+
+
+SELECT * FROM tasks;
+\d+ tasks;
+
+\c MatthewOlsen;
